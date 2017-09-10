@@ -9,15 +9,13 @@
                 <div class="form-group">
                     <input type="text" class="form-control" id="username" name="username"  placeholder="username">
                 </div>
-               <div>&nbsp</div>
                 <div  class="form-group">
                     <input type="password" class="form-control" id="password" name="password"   placeholder="password">
                 </div>
-                <div>&nbsp</div>
                  <div  class="form-group">
                     <input type="password" class="form-control" id="conformPassword" name="conformPassword"   placeholder="conformPassword">
                 </div>
-				<div>&nbsp</div>
+
                 <div  class="form-group">
                     <button type="submit" class="btn btn-primary">register</button>
                 </div>

@@ -13,6 +13,7 @@
           <div>&nbsp</div>
         </div>
         <div>
+        	<a href="/registerPage" class="btn btn-primary">register</a>
         	<button type="submit" class="btn btn-primary">Login</button>
         <div>
       </form>
