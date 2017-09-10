@@ -1,7 +1,5 @@
 package name.guoyuntao.web.verticle.user.userDB;
 
-import java.util.UUID;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,10 +16,6 @@ import io.vertx.ext.sql.SQLConnection;
 import name.guoyuntao.web.verticle.DBConnectionVerticle;
 
 public class LoginDBVerticle extends AbstractVerticle {
-    public static final String CONFIG_LOGINDB_JDBC_URL = "logindb.jdbc.url";
-    public static final String CONFIG_LOGINDB_JDBC_DRIVER_CLASS = "logindb.jdbc.driver_class";
-    public static final String CONFIG_LOGINDB_JDBC_MAX_POOL_SIZE = "logindb.jdbc.max_pool_size";
-    public static final String CONFIG_WIKIDB_SQL_QUERIES_RESOURCE_FILE = "logindb.sqlqueries.resource.file";
 
     public static final String USER_QUEUE = "userdb.queue";
     public static final String LOGIN_QUEUE = "logindb.queue";
@@ -32,7 +26,7 @@ public class LoginDBVerticle extends AbstractVerticle {
     @Override
     public void start(Future<Void> startFuture) throws Exception {
 
-    	
+    	//连接数据库
     	DBConnectionVerticle dbConnectionVerticle = new DBConnectionVerticle();
     	JsonObject mySQLClientConfig = dbConnectionVerticle.dbConnection();
     	mySQLClient = MySQLClient.createShared(vertx, mySQLClientConfig);

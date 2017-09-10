@@ -1,8 +1,5 @@
 package name.guoyuntao.web.verticle.user.userWeb;
 
-import java.awt.List;
-import java.util.Map;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

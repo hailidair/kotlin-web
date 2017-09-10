@@ -26,7 +26,7 @@ public class UserInfoDBVerticle extends AbstractVerticle {
     private SQLClient  mySQLClient;
     @Override
     public void start(Future<Void> startFuture) throws Exception {
-      
+    	//连接数据库
     	DBConnectionVerticle dbConnectionVerticle = new DBConnectionVerticle();
     	JsonObject mySQLClientConfig = dbConnectionVerticle.dbConnection();
     	mySQLClient = MySQLClient.createShared(vertx, mySQLClientConfig);
